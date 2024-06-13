@@ -1,0 +1,50 @@
+# Product Management Application
+
+This is a simple Product Management application built with Spring Boot. It provides basic CRUD operations for managing products, including creating, reading, updating, and deleting products.
+
+## Prerequisites
+
+- Java 17 or higher
+- Maven 3.6.0 or higher
+- An IDE of your choice (IntelliJ, Eclipse, VS Code, etc.)
+
+## Setup
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/AH82021/product-management.git
+    cd product-management
+    ```
+
+2. **Build the project**:
+    ```bash
+    mvn clean install
+    ```
+
+3. **Run the application**:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+4. **Access the application**:
+    The application will be running at `http://localhost:8080`.
+
+## REST API Endpoints
+
+The following endpoints are available in the application:
+
+- **Create a Product**: `POST /products`
+- **Get a Product by ID**: `GET /products/{id}`
+- **Get All Products**: `GET /products`
+- **Update a Product**: `PUT /products/{id}`
+- **Delete a Product**: `DELETE /products/{id}`
+
+## Running Tests
+
+### Unit Tests
+
+Unit tests are provided to ensure that the core functionalities of the application are working as expected. These tests cover the `ProductService` and `ProductController` classes.
+
+To run the unit tests, use the following command:
+```bash
+mvn test
